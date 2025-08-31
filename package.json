@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "node example01/example01.js"
+    "example01": "node example01/example01.js"
   },
   "repository": {
     "type": "git",
