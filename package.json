@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "name": "devlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node example01/example01.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keishotbow/devlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keishotbow/devlog/issues"
+  },
+  "homepage": "https://github.com/keishotbow/devlog#readme"
 }
