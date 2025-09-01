@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チャットDE人狼</title>
+    <style>
+        /* ここからCSS。最低限の見た目調整。 */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #messages {
+            flex: 1;
+            overflow-y: auto;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+        }
+
+        #messages li {
+            margin: 5px 0;
+        }
+
+        #form {
+            display: flex;
+            padding: 10px;
+            background: #eee;
+        }
+
+        #input {
+            flex: 1;
+            padding: 8px;
+        }
+
+        #form button {
+            padding: 8px;
+        }
+
+        .system {
+            color: gray;
+            font-style: italic;
+        }
+
+        .username {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .time {
+            font-size: 0.8em;
+            color: #888;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chat-container">
+        <!-- チャットのメッセージ（<li>）が追加されていく -->
+        <ul id="messages"></ul>
+
+        <!-- 送信用フォーム。テキストボックスとSendボタンがある -->
+        <form id="form" action="">
+            <!-- ユーザが入力するテキスト欄 -->
+            <input id="input" autocomplete="off" placeholder="入力してください..." /><button>送信</button>
+        </form>
+    </div>
+
+    <!-- サーバが自動で提供するSocket.IOクライアントライブラリを読み込む（io()が使えるようになる） -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // サーバとWebSocketで接続する
+        // Socketオブジェクトで送信（emit)や受診（on）を扱う。
+        // DOM要素の参照を取得
+        const socket = io();
+        const form = document.getElementById("form");
+        const input = document.getElementById("input");
+        const messages = document.getElementById("messages");
+
+        // 受信/送信メッセージを<li>要素にしてmessagesに追加するメソッド
+        function addMessage({ user, msg, time }) {
+            // 新しい<li>を作成
+            const item = document.createElement("li");
+
+            // ローカライズ済みのメッセージ
+            const timestamp = new Date(time).toLocaleTimeString();
+
+            if (user === "System") {
+                item.classList.add("system");
+                // 
+                item.textContent = `[${timestamp}] ${msg}`;
+            }
+            else {
+                // チャット時刻の文字列を生成
+                const timeSpan = document.createElement("span");
+                timeSpan.className = "time";
+                timeSpan.textContent = `[${timestamp}]`;
+
+                // ユーザ名を生成
+                const userSpan = document.createElement("span");
+                userSpan.className = "username";
+                userSpan.textContent = `(${user}): `;
+
+                // メッセージを生成
+                const msgSpan = document.createElement("span");
+                msgSpan.textContent = msg;
+
+                item.appendChild(timeSpan);
+                item.appendChild(userSpan);
+                item.appendChild(msgSpan);
+            }
+
+            // チャット一覧に追加
+            messages.appendChild(item);
+            // 一番下にスクロール（新規チャットを見やすくするため）
+            messages.scrollTop = messages.scrollHeight;
+        };
+
+        // 接続時にユーザ名を設定
+        const username = prompt("ユーザ名を入力してください") || "Anonymous";
+        socket.emit("set username", username);
+
+        // フォーム送信イベント
+        form.addEventListener("submit", (e) => {
+            // 送信時、通常フォームはリロードするが防止する
+            e.preventDefault();
+
+            const message = input.value.trim();
+
+            // 入力文字列（input.value）が空でなければサーバへ送信
+            if (message) {
+                // メッセージを送信する（chat messageはサーバ側と揃える必要がある）
+                socket.emit("chat message", message);
+                input.value = "";
+            }
+        });
+
+        // サーバからのメッセージ受信イベント
+        // サーバから"chat message"イベントを受け取ったら発火
+        // <li>を作って<ul>に追加し、チャット履歴が見えるようにする
+        socket.on("chat message", addMessage);
+    </script>
+</body>
+
+</html>
