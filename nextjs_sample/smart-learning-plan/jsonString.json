@@ -1,0 +1,898 @@
+{
+    "weeks": [
+        {
+            "dailyTasks": [
+                {
+                    "day": "2025-09-11 (木)",
+                    "tasks": []
+                },
+                {
+                    "day": "2025-09-12 (金)",
+                    "tasks": [
+                        {
+                            "description": "第1章前半：基礎用語・金融市場の理解",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-09-15 (月)",
+                    "tasks": [
+                        {
+                            "description": "第1章後半：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-09-17 (水)",
+                    "tasks": [
+                        {
+                            "description": "第2章前半：金融商品・リスク管理",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-09-19 (金)",
+                    "tasks": [
+                        {
+                            "description": "第2章後半：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-09-22 (月)",
+                    "tasks": [
+                        {
+                            "description": "第3章前半：金融計画",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-09-24 (水)",
+                    "tasks": [
+                        {
+                            "description": "第3章後半：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-09-26 (金)",
+                    "tasks": [
+                        {
+                            "description": "第1～3章の復習、弱点克服",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 1,
+            "weeklyGoal": "第1章～第3章を理解し、練習問題を解く"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "2025-09-29 (月)",
+                    "tasks": [
+                        {
+                            "description": "第4章：ライフプランニング",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-01 (水)",
+                    "tasks": [
+                        {
+                            "description": "第4章：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-03 (金)",
+                    "tasks": [
+                        {
+                            "description": "第5章前半：資産運用",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-06 (月)",
+                    "tasks": [
+                        {
+                            "description": "第5章後半：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-08 (水)",
+                    "tasks": [
+                        {
+                            "description": "第6章：相続・贈与",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-10 (金)",
+                    "tasks": [
+                        {
+                            "description": "第6章：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-13 (月)",
+                    "tasks": [
+                        {
+                            "description": "第4～6章の復習、弱点克服",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-15 (水)",
+                    "tasks": []
+                }
+            ],
+            "weekNumber": 2,
+            "weeklyGoal": "第4章～第6章を理解し、練習問題を解く"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "2025-10-17 (金)",
+                    "tasks": [
+                        {
+                            "description": "第7章：税金",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-20 (月)",
+                    "tasks": [
+                        {
+                            "description": "第7章：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-22 (水)",
+                    "tasks": [
+                        {
+                            "description": "第8章前半：年金",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-24 (金)",
+                    "tasks": [
+                        {
+                            "description": "第8章後半：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-27 (月)",
+                    "tasks": [
+                        {
+                            "description": "第9章：その他",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-29 (水)",
+                    "tasks": [
+                        {
+                            "description": "第9章：問題演習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-10-31 (金)",
+                    "tasks": [
+                        {
+                            "description": "第7～9章の復習、弱点克服",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 3,
+            "weeklyGoal": "第7章～第9章を理解し、練習問題を解く"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "2025-11-03 (月)",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(1回分)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-11-05 (水)",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(1回分)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-11-07 (金)",
+                    "tasks": [
+                        {
+                            "description": "弱点分野の復習",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-11-10 (月)",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(1回分)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-11-12 (水)",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(1回分)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "2025-11-14 (金)",
+                    "tasks": [
+                        {
+                            "description": "弱点分野の復習・総復習",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 4,
+            "weeklyGoal": "過去問演習と弱点克服"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "テキスト3章「資産運用」復習と演習問題",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        },
+                        {
+                            "description": "過去問演習(資産運用)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "テキスト4章「相続」復習と演習問題",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        },
+                        {
+                            "description": "過去問演習(相続)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "弱点分野の復習(3章、4章)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "模擬試験1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 5,
+            "weeklyGoal": "FP2級試験範囲の理解度確認と実践問題演習"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "テキスト5章「税金」復習と演習問題",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        },
+                        {
+                            "description": "過去問演習(税金)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "テキスト6章「年金」復習と演習問題",
+                            "isCompleted": false,
+                            "estimatedTime": 90
+                        },
+                        {
+                            "description": "過去問演習(年金)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "弱点分野の復習(5章、6章)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "模擬試験1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 6,
+            "weeklyGoal": "FP2級試験範囲の応用問題演習と弱点克服"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(全範囲)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "弱点分野の徹底復習",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "模擬試験1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "学習内容の総復習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 7,
+            "weeklyGoal": "過去問演習と弱点分野の徹底対策"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(全範囲)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "試験時間、問題数、解答方法の確認",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "模擬試験1回分(時間制限あり)",
+                            "isCompleted": false,
+                            "estimatedTime": 150
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "弱点分野の最終確認",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        },
+                        {
+                            "description": "試験当日までのスケジュール確認",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 8,
+            "weeklyGoal": "実践的試験対策と本番への準備"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問1回分演習(午前)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "弱点分野のテキスト復習(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "過去問1回分演習(午前)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "弱点分野の練習問題演習(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "過去問解説・分析(午前)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "学習内容の復習と整理(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 9,
+            "weeklyGoal": "過去問演習開始と弱点分野の克服"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問1回分演習(時間制限あり)",
+                            "isCompleted": false,
+                            "estimatedTime": 150
+                        },
+                        {
+                            "description": "解答時間分析と弱点克服(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "過去問1回分演習(時間制限あり)",
+                            "isCompleted": false,
+                            "estimatedTime": 150
+                        },
+                        {
+                            "description": "間違えた問題の徹底復習(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "模擬試験1回分演習(時間制限あり)",
+                            "isCompleted": false,
+                            "estimatedTime": 180
+                        },
+                        {
+                            "description": "試験対策の振り返りと改善点の洗い出し(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 10,
+            "weeklyGoal": "過去問演習の精度向上と時間管理"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(弱点分野中心)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "テキストを用いた弱点克服(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "模擬試験1回分演習(時間制限あり)",
+                            "isCompleted": false,
+                            "estimatedTime": 180
+                        },
+                        {
+                            "description": "試験本番を想定した時間配分練習(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(全範囲)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "学習内容の総復習(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 11,
+            "weeklyGoal": "実践的試験対策と弱点克服"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(弱点分野中心)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "試験当日までのスケジュール確認(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "模擬試験1回分演習(時間制限あり)",
+                            "isCompleted": false,
+                            "estimatedTime": 180
+                        },
+                        {
+                            "description": "リラックス方法の確認(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "総復習と不明点の解消(午前)",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "試験当日への準備(午後)",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 12,
+            "weeklyGoal": "最終確認と本番対策"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(午前): 過去問1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "弱点分野の復習（教科書・過去問解説）",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(午後): 過去問1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "模擬試験1回分の実施",
+                            "isCompleted": false,
+                            "estimatedTime": 180
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "模擬試験の復習と弱点克服",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "時間配分の練習",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 13,
+            "weeklyGoal": "過去問演習による弱点克服と本番対策の最終確認"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(午前): 過去問1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "苦手分野の徹底対策",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "過去問演習(午後): 過去問1回分",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "実力確認テスト（過去問形式）",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "実力確認テストの分析と弱点克服",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "試験当日のスケジュール確認",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 14,
+            "weeklyGoal": "過去問演習の強化と実力確認"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "本番を想定した試験時間配分練習",
+                            "isCompleted": false,
+                            "estimatedTime": 180
+                        },
+                        {
+                            "description": "試験会場へのアクセス確認",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "過去問演習（弱点分野中心）",
+                            "isCompleted": false,
+                            "estimatedTime": 120
+                        },
+                        {
+                            "description": "試験当日の持ち物チェック",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "リラックスして試験に臨むためのメンタル調整",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        },
+                        {
+                            "description": "試験直前の最終確認",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 15,
+            "weeklyGoal": "本番を想定した最終確認と試験対策"
+        },
+        {
+            "dailyTasks": [
+                {
+                    "day": "月",
+                    "tasks": [
+                        {
+                            "description": "体調管理",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        },
+                        {
+                            "description": "試験に関する情報収集（最終確認）",
+                            "isCompleted": false,
+                            "estimatedTime": 30
+                        }
+                    ]
+                },
+                {
+                    "day": "水",
+                    "tasks": [
+                        {
+                            "description": "試験対策の最終確認",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        },
+                        {
+                            "description": "リラックス",
+                            "isCompleted": false,
+                            "estimatedTime": 60
+                        }
+                    ]
+                },
+                {
+                    "day": "金",
+                    "tasks": [
+                        {
+                            "description": "試験本番",
+                            "isCompleted": false,
+                            "estimatedTime": 240
+                        }
+                    ]
+                }
+            ],
+            "weekNumber": 16,
+            "weeklyGoal": "最終調整と試験本番"
+        }
+    ]
+}
