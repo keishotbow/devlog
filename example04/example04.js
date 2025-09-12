@@ -19,21 +19,25 @@ const server = http.createServer(app);
 // WebSocket/長輪講ポーリング等のTranspotを抽象化
 const io = require("socket.io")(server);
 
-// app.get("/", (req, res) => {
-//     // res.send("Hello World");
-//     res.sendFile(__dirname + "/index.html")
-// });
+app.get("/", (req, res, next) => {
+    res.locals.message = "first message <br>";
+    next();
+}, (req, res) => {
+    res.locals.message += "second message <br>"
+    res.send({ message: res.locals.message });
+});
+
+app.get("/movie", (req, res) => {
+
+});
+
+app.post("/", (req, res) => {
+    res.send({ message: "post response from server" });
+});
 
 // 静的ファイルを配信するミドルウェアを登録
-// __dirnameは現在ファイルの絶対パス
-// path.join()でOSに合わせたパス文字列を返す
-// console.log(path.join(__dirname, "index.html"));
-// Node.jsだけだとindex.htmlやstyle.css, main.jsといったフロントエンド用ファイルをそのまま配信する仕組みがない
-// Expressにはexpressという便利な仕組みがあり、これを使うと、指定したフォルダ内のファイルを自動的に公開できる
-// ここではpublicフォルダの中をそのまま公開してもいいよという宣言
 // HTML/CSS/JS/画像など、ユーザのブラウザに直接送るファイルを置く場所
-// サーバ側のロジック（APIなど）とクライアント側のファイルを整理して分けられる。
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
 // クライアントからの接続確立時に一回よばれるイベントを登録
 // サーバ側で新しい接続（クライアントがサーバに接続したとき）を監視するイベントリスナー

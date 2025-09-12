@@ -1,6 +1,7 @@
 const { execSync } = require("child_process");
 const { createFileList } = require("./create_filelist");
 const fs = require("fs");
+const { json } = require("express");
 
 // 設定ファイルを読み込む
 const config = JSON.parse(fs.readFileSync("config.json", "utf8"));
@@ -27,8 +28,19 @@ console.log("running:", cmdSlideshow);
 execSync(cmdSlideshow, { stdio: "inherit" });
 
 const cmdShowFileStats = `ffprobe -v quiet -print_format json -show_format -show_streams ${outputFile}`;
-console.log("running:", cmdShowFileStats);
-execSync(cmdShowFileStats, { stdio: "inherit" });
+// console.log("running:", cmdShowFileStats);
+execSync(cmdShowFileStats, (err, stdout, stderr) => {
+    if (err) {
+        console.error(`Error: ${err}`);
+        return;
+    }
+    const stats = JSON.parse(stdout.toString());
+
+    console.log(`${JSON.stringify(stats, null, 4)}`);
+});
+// const stats = JSON.parse(output.toString());
+
+// console.log(`${JSON.stringify(stats, null, 4)}`);
 
 // BGM合成
 // TODO

@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^5.1.0",
+    "openai": "^5.19.1",
     "socket.io": "^4.8.1"
   },
   "name": "devlog",
@@ -13,7 +14,8 @@
   "scripts": {
     "example01": "nodemon example01/example01.js",
     "example03": "nodemon example03/example03.js",
-    "example04": "nodemon example04/example04.js"
+    "example04": "nodemon example04/example04.js",
+    "exec_sample": "nodemon exec_sample/exec_sample.js"
   },
   "repository": {
     "type": "git",

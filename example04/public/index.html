@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>チャットDE人狼</title>
+    <title>My cool chat app</title>
     <style>
         /* ここからCSS。最低限の見た目調整。 */
         body {
@@ -81,7 +81,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         // サーバとWebSocketで接続する
-        // Socketオブジェクトで送信（emit)や受診（on）を扱う。
+        // Socketオブジェクトで送信（emit)や受信（on）を扱う。
         // DOM要素の参照を取得
         const socket = io();
         const form = document.getElementById("form");
@@ -97,11 +97,12 @@
             const timestamp = new Date(time).toLocaleTimeString();
 
             if (user === "System") {
+                // System（非ユーザ）の場合のメッセージを生成する
                 item.classList.add("system");
-                // 
                 item.textContent = `[${timestamp}] ${msg}`;
             }
             else {
+                // ユーザが一般の参加者の場合のメッセージを生成する
                 // チャット時刻の文字列を生成
                 const timeSpan = document.createElement("span");
                 timeSpan.className = "time";
@@ -128,27 +129,31 @@
         };
 
         // 接続時にユーザ名を設定
-        const username = prompt("ユーザ名を入力してください") || "Anonymous";
+        const username = prompt("ユーザ名を入力してください") || "名無し";
+        // サーバ宛にset usernameイベントの発火を通知
         socket.emit("set username", username);
 
-        // フォーム送信イベント
+        // チャットメッセージのフォーム送信イベント
         form.addEventListener("submit", (e) => {
-            // 送信時、通常フォームはリロードするが防止する
+            // 通常は送信時にフォームをリロードするようになっているが、防止する
             e.preventDefault();
 
+            // チャットメッセージから余分な空白を除去
             const message = input.value.trim();
 
-            // 入力文字列（input.value）が空でなければサーバへ送信
+            // メッセージが空文字でなければ...
             if (message) {
-                // メッセージを送信する（chat messageはサーバ側と揃える必要がある）
+                // サーバ（に接続している全クライアント）宛にメッセージを送信する
+                // server.js側ではsocket.on("chat message")でメッセージを受け取る
                 socket.emit("chat message", message);
+                // 入力フォームを空にセットしておく（次のメッセージ入力に備えて）
                 input.value = "";
             }
         });
 
-        // サーバからのメッセージ受信イベント
-        // サーバから"chat message"イベントを受け取ったら発火
-        // <li>を作って<ul>に追加し、チャット履歴が見えるようにする
+        // サーバからのメッセージを受信した際に発火するイベントを登録する
+        // サーバからsocket.emit("chat message")を実行したら、addMessageメソッドを呼ぶ
+        // 受け取ったメッセージで<li>を作って<ul>に追加し、チャット履歴が見えるようにする
         socket.on("chat message", addMessage);
     </script>
 </body>
